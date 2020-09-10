@@ -13,8 +13,6 @@ class Multiples
     end
 
     def sum_multiples
-        array = Array.new(limit - 1) {|i| i+=1}
-        multiples = array.select {|n| n % 3 == 0 || n % 5 == 0}
-        multiples.sum
+        collect_multiples.sum
     end
 end
